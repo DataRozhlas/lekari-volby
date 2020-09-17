@@ -82,7 +82,7 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
     name: 'muži',
     data :[285, 482, 384, 325, 226, 190, 170, 237, 506, 242],
 
-    color: colors['2018']
+    color: colors.avg
   },
   {
     name: 'ženy',

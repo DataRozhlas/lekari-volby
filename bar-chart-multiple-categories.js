@@ -1,45 +1,45 @@
-Highcharts.chart('vis-stacked-bar-multiple-categories', {
+Highcharts.chart('vis-bar-multiple-categories', {
   chart: {
       type: 'bar',
       width: chartWidth, 
       height: 600 // comment out if not necessary
   },
   title: {
-      text: 'Stacked Bar Chart Multiple Categories', 
+      text: 'Bar Chart Multiple Categories', 
       useHTML: true,
   },
   subtitle: {
       useHTML: true,
-      text: 'Mezi zubaři převládají starší ženy' + '<br><span style="color: #fff">.</span>'
+      text: 'Meziroční srovnání nepovolených jízd za návěstidla po měsících'
+              // + '<br><span style="color: #fff">.</span>',
   },
   credits: {
-    href : '',
-    text : 'Zdroj: Česká stomatologická komora'
+    href : 'http://www.dicr.cz/statistiky-mimoradnych-udalosti',
+    text : 'Zdroj: Drážní inspekce'
   },
   xAxis: {
-      categories: ['24-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-99']
+      categories: ['Praha', 'Jihomoravský', 'Olomoucký', 'Průměr ČR', 'Karlovarský', 'Královéhradecký', 'Plzeňský', 'Moravskoslezský', 'Jihočeský', 'Pardubický', 'Vysočina', 'Zlínský', 'Liberecký', 'Ústecký', 'Středočeský'],
   },
   yAxis: {
-      title: false,
-      // title: {
-      //     text: 'nepovolené jízdy za návěstidla'
-      // },
-      max: 100, 
+      title: {
+          text: 'nepovolené jízdy za návěstidla'
+      },
+      max: 50 // 
       // showFirstLabel: false,
-      labels: {
-        formatter: function() {
+      // labels: {
+        // formatter: function() {
         //   if (this.isLast) {
         //     return this.value + '<br>' +
         //                 '<span class="light-gray-text">jízd za</span>' + '<br>' +
         //                 '<span class="light-gray-text">návěstidla</span>'
         //   } else {
-            return this.value + '%'
+        //     return this.value
         //   }
-        } 
-      }
+        // } 
+      // }
   }, 
   tooltip: {
-    valueSuffix: ' %',
+    valueSuffix: ' jízd',
     shared: true
   },
   exporting: {
@@ -70,15 +70,13 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
     }
   },*/
   {
-    name: 'muži',
-    data :[285, 482, 384, 325, 226, 190, 170, 237, 506, 242],
-
+    name: '2018',
+    data :[6.72, 4.51, 4.29, 4, 3.95, 3.95, 3.91 3.78, 3.52, 3.49, 3.37, 3.36, 3.29, 3.25, 2.68],
     color: colors['2018']
   },
   {
-    name: 'ženy',
-    data :[980, 984, 430, 317, 383, 393, 297, 616, 945, 321],
-
+    name: '2017',
+    data :[6.72, 4.46, 4.11, 3.97, 4.03, 3.86, 3.96, 3.72, 3.53, 3.51, 3.37, 3.26, 3.24, 3.13, 2,76],
     color: colors['2019']
     
   },

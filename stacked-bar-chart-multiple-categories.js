@@ -15,14 +15,14 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
   },
   subtitle: {
       useHTML: true,
-      text: 'Většina Čechů říká, že třídí odpadky, omezit konzumaci masa se ale chce jen málokomu' + '<br><span style="color: #fff">.</span>'
+      text: 'Mezi zubaři převládají starší ženy' + '<br><span style="color: #fff">.</span>'
   },
   credits: {
     href : '',
-    text : 'Zdroj: třeba doplnit'
+    text : 'Zdroj: Česká stomatologická komora'
   },
   xAxis: {
-      categories: ['třídím odpadky', 'šetřím vodou (sprchování, mytí nádobí..)', 'omezuji igelitky', 'vyhýbám se nadbytečným obalům', 'kupuji lokální potraviny', 'nosím si vlastní láhev na vodu', 'celkově omezuji spotřebu', 'nekupuji balenou vodu', 'nakupuji věci z druhé ruky', 'jezdím MHD místo autem', 'nelétám letadlem', 'používám přírodní kosmetiku', 'vzdělávám se o ekologii', 'podepisuji petice', 'snižuji konzumaci masa', 'chodím na demonstrace za klima']
+      categories: ['24-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-99']
   },
   yAxis: {
       title: false,
@@ -79,24 +79,17 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
     }
   },*/
   {
-    name: '2018',
-    data :[2, 6, 8, 8, 9, 19, 14, 19, 29, 32, 41, 30, 30, 51, 54, 82],
+    name: 'muži',
+    data :[285, 482, 384, 325, 226, 190, 170, 237, 506, 242],
 
     color: colors['2018']
   },
   {
-    name: '2019',
-    data :[5, 12, 11, 25, 26, 17, 25, 21, 14, 17, 11, 23, 26, 19, 20, 14],
+    name: 'ženy',
+    data :[980, 984, 430, 317, 383, 393, 297, 616, 945, 321],
 
     color: colors['2019']
     
-  },
-  {
-    name: '2020',
-    data :[93, 82, 81, 67, 65, 64, 61, 60, 57, 51, 48, 47, 44, 30, 26, 4],
-
-    color: colors['2020']
-    // color: colors[function() { console.log(this); return '2020' }()]
   },
 ]
 });

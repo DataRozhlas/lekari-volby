@@ -29,7 +29,7 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
       // title: {
       //     text: 'nepovolené jízdy za návěstidla'
       // },
-      max: 80,
+      min: 0,
       // showFirstLabel: false,
       labels: {
         formatter: function() {

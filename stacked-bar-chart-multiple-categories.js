@@ -38,13 +38,13 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
         //                 '<span class="light-gray-text">jízd za</span>' + '<br>' +
         //                 '<span class="light-gray-text">návěstidla</span>'
         //   } else {
-            return this.value + '%'
+            return this.value + ''
         //   }
         } 
       }
   }, 
   tooltip: {
-    valueSuffix: ' %',
+    valueSuffix: ' ',
     shared: true
   },
   exporting: {
@@ -88,7 +88,7 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
     name: 'ženy',
     data :[980, 984, 430, 317, 383, 393, 297, 616, 945, 321],
 
-    color: colors['2019']
+    color: colors['2020']
     
   },
 ]

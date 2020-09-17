@@ -5,17 +5,17 @@ Highcharts.chart('vis-bar-multiple-categories', {
       height: 600 // comment out if not necessary
   },
   title: {
-      text: 'Bar Chart Multiple Categories', 
+      text: 'Počet úvazků lékařů na 1 000 obyvatel', 
       useHTML: true,
   },
   subtitle: {
       useHTML: true,
-      text: 'Meziroční srovnání nepovolených jízd za návěstidla po měsících'
+      text: 'v rámci krajů ČR ve všech segmentech péče v roce 2017 a 2018'
               // + '<br><span style="color: #fff">.</span>',
   },
   credits: {
-    href : 'http://www.dicr.cz/statistiky-mimoradnych-udalosti',
-    text : 'Zdroj: Drážní inspekce'
+    href : 'https://www.uzis.cz/res/f/008281/nzis-rep-2019-e04-personalni-kapacity-odmenovani-2018.pdf',
+    text : 'Zdroj: ÚZIS'
   },
   xAxis: {
       categories: ['Praha', 'Jihomoravský', 'Olomoucký', 'Průměr ČR', 'Karlovarský', 'Královéhradecký', 'Plzeňský', 'Moravskoslezský', 'Jihočeský', 'Pardubický', 'Vysočina', 'Zlínský', 'Liberecký', 'Ústecký', 'Středočeský'],
@@ -71,7 +71,7 @@ Highcharts.chart('vis-bar-multiple-categories', {
   },*/
   {
     name: '2018',
-    data :[6.72, 4.51, 4.29, 4, 3.95, 3.95, 3.91 3.78, 3.52, 3.49, 3.37, 3.36, 3.29, 3.25, 2.68],
+    data :[6.72, 4.51, 4.29, 4, 3.95, 3.95, 3.91, 3.78, 3.52, 3.49, 3.37, 3.36, 3.29, 3.25, 2.68],
     color: colors['2018']
   },
   {

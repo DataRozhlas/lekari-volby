@@ -10,12 +10,12 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
       height: 600 // comment out if not necessary
   },
   title: {
-      text: 'Stacked Bar Chart Multiple Categories', 
+      text: 'Zubní lékaři podle věku a pohlaví', 
       useHTML: true,
   },
   subtitle: {
       useHTML: true,
-      text: 'Mezi zubaři převládají starší ženy' + '<br><span style="color: #fff">.</span>'
+      text: 'Mezi mladými zubaři převládají ženy' + '<br><span style="color: #fff">.</span>'
   },
   credits: {
     href : '',

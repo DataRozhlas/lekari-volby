@@ -15,10 +15,10 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
   },
   subtitle: {
       useHTML: true,
-      text: 'Mezi mladými zubaři převládají ženy' + '<br><span style="color: #fff">.</span>'
+      text: 'Mezi zubaři do pětatřiceti převládají ženy' + '<br><span style="color: #fff">.</span>'
   },
   credits: {
-    href : '',
+    href : 'https://www.dent.cz/',
     text : 'Zdroj: Česká stomatologická komora'
   },
   xAxis: {
@@ -56,7 +56,7 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
   plotOptions: {
       bar: {
           dataLabels: {
-              enabled: false
+              enabled: true
           },
           enableMouseTracking: true,
           pointPadding: 0.1,

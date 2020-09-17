@@ -56,7 +56,7 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
   plotOptions: {
       bar: {
           dataLabels: {
-              enabled: true
+              enabled: false
           },
           enableMouseTracking: true,
           pointPadding: 0.1,

@@ -5,12 +5,12 @@ Highcharts.chart('vis-bar-multiple-categories', {
       height: 600 // comment out if not necessary
   },
   title: {
-      text: 'Počet úvazků lékařů na 1 000 obyvatel', 
+      text: 'Počet úvazků lékařů na tisíc obyvatel', 
       useHTML: true,
   },
   subtitle: {
       useHTML: true,
-      text: 'v rámci krajů ČR ve všech segmentech péče v roce 2017 a 2018'
+      text: 'v rámci krajů ve všech segmentech péče 2017 a 2018'
               // + '<br><span style="color: #fff">.</span>',
   },
   credits: {
@@ -22,7 +22,7 @@ Highcharts.chart('vis-bar-multiple-categories', {
   },
   yAxis: {
       title: {
-          text: 'nepovolené jízdy za návěstidla'
+          text: 'úvazky'
       },
       max: 50 // 
       // showFirstLabel: false,
@@ -39,7 +39,7 @@ Highcharts.chart('vis-bar-multiple-categories', {
       // }
   }, 
   tooltip: {
-    valueSuffix: ' jízd',
+    valueSuffix: ' úvazků',
     shared: true
   },
   exporting: {
@@ -76,8 +76,8 @@ Highcharts.chart('vis-bar-multiple-categories', {
   },
   {
     name: '2017',
-    data :[6.72, 4.46, 4.11, 3.97, 4.03, 3.86, 3.96, 3.72, 3.53, 3.51, 3.37, 3.26, 3.24, 3.13, 2,76],
-    color: colors['2019']
+    data :[6.72, 4.46, 4.11, 3.97, 4.03, 3.86, 3.96, 3.72, 3.53, 3.51, 3.37, 3.26, 3.24, 3.13, 2.76],
+    color: colors['2017']
     
   },
 ]

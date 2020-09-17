@@ -24,7 +24,7 @@ Highcharts.chart('vis-bar-multiple-categories', {
       title: {
           text: 'úvazky'
       },
-      max: 50 // 
+      max: 7 // 
       // showFirstLabel: false,
       // labels: {
         // formatter: function() {

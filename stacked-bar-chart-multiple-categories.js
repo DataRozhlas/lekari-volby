@@ -88,7 +88,7 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
     name: 'ženy',
     data :[980, 984, 430, 317, 383, 393, 297, 616, 945, 321],
 
-    color: colors['2020']
+    color: colors.avg
     
   },
 ]

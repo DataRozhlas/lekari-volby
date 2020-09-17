@@ -29,7 +29,7 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
       // title: {
       //     text: 'nepovolené jízdy za návěstidla'
       // },
-      max: 100, 
+      max: 80,
       // showFirstLabel: false,
       labels: {
         formatter: function() {
@@ -82,13 +82,13 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
     name: 'muži',
     data :[285, 482, 384, 325, 226, 190, 170, 237, 506, 242],
 
-    color: colors.avg
+    color: colors['2019']
   },
   {
     name: 'ženy',
     data :[980, 984, 430, 317, 383, 393, 297, 616, 945, 321],
 
-    color: colors.avg
+    color: colors['2020']
     
   },
 ]

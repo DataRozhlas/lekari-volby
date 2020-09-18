@@ -22,7 +22,7 @@ Highcharts.chart('vis-stacked-bar-multiple-categories', {
     text : 'Zdroj: Česká stomatologická komora'
   },
   xAxis: {
-      categories: ['24-29', '30-34', '35-39', '40-44', '45-49', '50-54', '55-59', '60-64', '65-69', '70-99']
+      categories: ['24-29 let', '30-34 let', '35-39 let', '40-44 let', '45-49 let', '50-54 let', '55-59 let', '60-64 let', '65-69 let', '70-99 let']
   },
   yAxis: {
       title: false,
